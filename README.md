@@ -39,7 +39,7 @@ cv2.putText(img1,'THARUN' ,(5,70),font,4,(255),2,cv2.LINE_AA)
 
 
 # Create the structuring element
-kernel1=cv2.getStructuringElement(cv2.MORPH_CROSS,(5,5))
+kernel1=cv2.getStructuringElement(cv2.MORPH_CROSS,(3,3))
 
 # Dilate the image
 img_dilate=cv2.dilate(img1,kernel1)
@@ -58,7 +58,7 @@ plt.imshow(img_erode,cmap='gray')
 ```
 ## Output:
 
-![Screenshot 2025-05-05 091624](https://github.com/user-attachments/assets/0e941dad-ab9e-4b6d-9d09-24690f89db82)
+![Screenshot 2025-05-05 094013](https://github.com/user-attachments/assets/dca74fe5-6f01-437f-b83f-ff359bf0280d)
 
 
 ## Result
